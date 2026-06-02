@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-"""
-Gemini API Quickstart - Streaming version.
-Asks "Hello, what is 2+2?" and streams the response letter-by-letter/word-by-word.
-Uses the modern google-genai SDK and gemini-3.5-flash.
-"""
-
 import os
 import sys
 from dotenv import load_dotenv

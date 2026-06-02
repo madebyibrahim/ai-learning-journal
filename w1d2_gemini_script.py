@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-"""
-Gemini API Quickstart - Streaming version.
-Asks "Hello, what is 2+2?" and streams the response letter-by-letter/word-by-word.
-Uses the modern google-genai SDK and gemini-3.5-flash.
-"""
-
 import os
 import sys
 from dotenv import load_dotenv
@@ -29,7 +22,7 @@ def main():
     try:
         # 3. Use generate_content_stream instead of generate_content
         response_stream = client.models.generate_content_stream(
-            model="gemini-3.5-flash",
+            model="gemini-3.1-flash-lite",
             contents="Hello, what is 2+2?",
         )
         
